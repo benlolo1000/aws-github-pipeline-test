@@ -6,6 +6,8 @@ app.get('/', (req, res) =>{
 
 })
 
-app.listen(3000, () => {
+const port = process.env.PORT || process.env.port || 3000;
+
+app.listen(port, () => {
     console.log('Listerning on 3000')
 });
